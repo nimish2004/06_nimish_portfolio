@@ -99,7 +99,6 @@ main .right img {
 @media (max-width: 768px) {
     nav{
         margin-top: 1rem;
-        margin-left: 1rem;
     }
     nav img{
         display: none;
