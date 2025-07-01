@@ -7,6 +7,13 @@ import Skills from './components/Skills';
 const App = () => {
   return (
     <div>
+      <a
+  href="/Cv_Nimish (2).pdf"
+  download
+  className="floating-download-btn"
+>
+  📄 Download CV
+</a>
       {/* Navigation Links */}
       {/* Sections */}
       <div id="about">

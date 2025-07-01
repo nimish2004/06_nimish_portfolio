@@ -1,52 +1,44 @@
 import React from 'react';
 
+const skillData = [
+  {
+    title: "Programming Languages",
+    items: ["Python", "Java", "C", "C++", "JavaScript", "XML"],
+  },
+  {
+    title: "Web Development",
+    items: ["HTML", "CSS", "JavaScript", "ReactJS", "Tailwind CSS"],
+  },
+  {
+    title: "Mobile Development",
+    items: ["Kotlin (Android, Jetpack, Canvas)"],
+  },
+  {
+    title: "Tools & IDEs",
+    items: ["VS Code", "Android Studio", "Google Colab", "DevC++"],
+  },
+  {
+    title: "Version Control",
+    items: ["GitHub"],
+  },
+];
+
 const Skills = () => {
-    return (
-        <div className="skills-container">
-            <h2>Skills</h2>
-            <div>
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>JavaScript</li>
-                    <li>XML</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Web Development</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>ReactJS</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Mobile Development</h3>
-                <ul>
-                    <li>Kotlin (Android, Jetpack, Canvas)</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Tools & IDEs</h3>
-                <ul>
-                    <li>VS Code</li>
-                    <li>Android Studio</li>
-                    <li>Google Colab</li>
-                    <li>DevC++</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Version Control</h3>
-                <ul>
-                    <li>GitHub</li>
-                </ul>
-            </div>
+  return (
+    <section className="skills-container" id="skills">
+      <h2>Skills</h2>
+      {skillData.map((category, index) => (
+        <div key={index}>
+          <h3>{category.title}</h3>
+          <ul>
+            {category.items.map((skill, idx) => (
+              <li key={idx}>{skill}</li>
+            ))}
+          </ul>
         </div>
-    );
+      ))}
+    </section>
+  );
 };
 
 export default Skills;

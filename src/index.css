@@ -347,3 +347,43 @@ main .right img {
         font-size: 1rem;
     }
 }
+
+.button-glow {
+  background: #00bcd4;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #00bcd4;
+}
+.button-glow:hover {
+  background: #008c9e;
+  box-shadow: 0 0 10px #00bcd4, 0 0 40px #00bcd4;
+}
+
+
+
+.floating-download-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #00bcd4, #008c9e);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.9rem 1.4rem;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.4);
+  text-decoration: none;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.floating-download-btn:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 188, 212, 0.6);
+  color: black;
+  background: linear-gradient(135deg, #008c9e, #00bcd4);
+}
+
