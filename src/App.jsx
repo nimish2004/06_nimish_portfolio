@@ -12,7 +12,7 @@ const App = () => {
   download
   className="floating-download-btn"
 >
-  📄  CV
+  📄 Download CV
 </a>
       {/* Navigation Links */}
       {/* Sections */}
