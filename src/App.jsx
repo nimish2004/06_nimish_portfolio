@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 const App = () => {
   return (
     <div>
-      <a href="/Cv_Nimish (5).pdf"
+      <a href="/Cv_Nimish (11).pdf"
   download
   className="floating-download-btn"
 >
